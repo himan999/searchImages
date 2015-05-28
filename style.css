@@ -1,0 +1,49 @@
+html, body {
+	z-index: 998;
+}
+
+#gridContainer {
+	margin-top: 70px;
+	height : 100%;
+	width : 100%;
+	display: table;
+	z-index: 999;
+}
+
+.grid-item {
+	display : "table-cell";
+	height : 200px;
+	background-repeat : no-repeat;
+	background-size : cover;
+	background-position : center;
+	border : 2px solid white;
+	z-index: 1000;
+}
+
+.black-overlay {
+	display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    opacity: 1;
+}
+
+
+.full-image-view {
+	display: none;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding: 16px;
+    background-color: transparent;
+    z-index:1002;
+    overflow: auto;
+    background-position: center;
+    background-size: 800px;
+}
